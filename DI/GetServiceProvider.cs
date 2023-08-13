@@ -17,7 +17,7 @@ public static class Setup {
 
         var logger = new LoggerConfiguration()
             .WriteTo.Console(outputTemplate: "{Message:lj}{NewLine}{Exception}")
-            .WriteTo.File("log.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+//            .WriteTo.File("log.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
             .CreateLogger();
 
         logger.Debug("Starting comapreXlsx.");
